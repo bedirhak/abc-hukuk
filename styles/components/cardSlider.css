@@ -1,0 +1,152 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 98vw;
+  margin: 30px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 400px;
+  justify-content: start;
+}
+
+.card {
+  align-items: flex-end;
+  background-size: cover;
+  border-radius: 0.75rem;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: flex;
+  margin: 0 10px;
+  overflow: hidden;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  width: 80px;
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  align-items: center;
+  background: #223;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  width: 50px;
+}
+
+.card > .row > .description {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(30px);
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+  width: 520px;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url("https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.card[for="c2"] {
+  background-image: url("https://cdn.pixabay.com/photo/2015/06/08/18/38/hammer-802300_960_720.jpg");
+}
+
+.card[for="c3"] {
+  background-image: url("https://cdn.pixabay.com/photo/2019/12/18/13/04/right-4703922_960_720.jpg");
+}
+
+.card[for="c4"] {
+  background-image: url("https://cdn.pixabay.com/photo/2015/03/17/15/48/lady-justice-677945_1280.jpg");
+}
+
+@media (max-width: 940px) {
+  input:checked + label {
+    width: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  input:checked + label {
+    width: 40vw;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+    width: 100% !important;
+    text-align: center;
+    align-items: center;
+
+    .icon {
+      margin: 0;
+      width: 80px;
+      height: 50px;
+    }
+
+    .description {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  input:checked + label {
+    width: 40vw;
+  }
+
+  .wrapper {
+    max-width: 90vw;
+  }
+
+  .card {
+    margin: 0 2px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: unset;
+    justify-content: center;
+  }
+
+  input:checked + label {
+    width: 90%;
+  }
+}
