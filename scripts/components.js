@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <ul class="abc-header-nav-list">
         <li class="nav-links"><a class="nav-direct" href="./index.html">Anasayfa</a></li>
         <li class="nav-links"><a class="nav-direct" href="./about.html">Hakkımızda</a></li>
-        <li class="nav-links"><a class="nav-direct" href="#">Hizmetlerimiz</a></li>
+        <li class="nav-links"><a class="nav-direct" href="./services.html">Hizmetlerimiz</a></li>
         <li class="nav-links"><a class="nav-direct" href="#">Ekibimiz</a></li>
         <li class="nav-links"><a class="nav-direct" href="#">İletişim</a></li>
       </ul>

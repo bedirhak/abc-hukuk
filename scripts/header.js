@@ -12,9 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         item.style.display = "block";
         item.style.opacity = "0";
         item.style.transform = "translateX(-20px)";
-        item.style.transition = `opacity 0.3s ease ${
-          index * 0.15
-        }s, transform 0.3s ease ${index * 0.15}s`;
+        item.style.transition = `opacity 0.3s ease ${index * 0.15
+          }s, transform 0.3s ease ${index * 0.15}s`;
         setTimeout(() => {
           item.style.opacity = "1";
           item.style.transform = "translateX(0)";
@@ -23,9 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       // hide the menu from left to right starting from the last item
       navItems.forEach((item, index) => {
-        item.style.transition = `opacity 0.3s ease ${
-          (navItems.length - index - 1) * 0.15
-        }s, transform 0.3s ease ${(navItems.length - index - 1) * 0.15}s`;
+        item.style.transition = `opacity 0.3s ease ${(navItems.length - index - 1) * 0.15
+          }s, transform 0.3s ease ${(navItems.length - index - 1) * 0.15}s`;
         item.style.opacity = "0";
         item.style.transform = "translateX(-20px)";
         setTimeout(() => {
@@ -41,9 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!menuIcon.contains(event.target) && !navList.contains(event.target)) {
       if (isMenuOpen && window.innerWidth <= 875) {
         navItems.forEach((item, index) => {
-          item.style.transition = `opacity 0.3s ease ${
-            index * 0.15
-          }s, transform 0.3s ease ${index * 0.15}s`;
+          item.style.transition = `opacity 0.3s ease ${index * 0.15
+            }s, transform 0.3s ease ${index * 0.15}s`;
           item.style.opacity = "0";
           item.style.transform = "translateX(-20px)";
         });
@@ -68,9 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
     item.addEventListener("click", () => {
       if (isMenuOpen) {
         navItems.forEach((item, index) => {
-          item.style.transition = `opacity 0.3s ease ${
-            index * 0.15
-          }s, transform 0.3s ease ${index * 0.15}s`;
+          item.style.transition = `opacity 0.3s ease ${index * 0.15
+            }s, transform 0.3s ease ${index * 0.15}s`;
           item.style.opacity = "0";
           item.style.transform = "translateX(-20px)";
         });
@@ -118,6 +114,13 @@ document.addEventListener("DOMContentLoaded", () => {
       isMenuOpen = false;
       icon.classList.remove("fa-xmark");
       icon.classList.add("fa-bars");
+    }
+
+    if (window.innerWidth > 875) {
+      navList.style.display = "flex";
+      navItems.forEach((item) => {
+        item.style.display = "block"; // Remove transition for desktop view
+      });
     }
   });
 });
