@@ -2,6 +2,7 @@ body {
   width: 100%;
   height: 100vh;
 }
+
 .viewport {
   display: flex;
   align-items: center;
@@ -20,6 +21,7 @@ body {
   align-items: center;
   box-sizing: border-box;
 }
+
 .dots-item {
   position: relative;
   z-index: 1;
@@ -30,12 +32,15 @@ body {
   background: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
+
 .dots-item:hover {
   background: rgba(255, 255, 255, 0.8);
 }
+
 .dots-item.active {
   background: rgba(255, 255, 255, 1);
 }
+
 .slider {
   display: flex;
   flex-direction: column;
@@ -45,6 +50,7 @@ body {
   transition: transform 0.5s ease-in-out;
   will-change: transform;
 }
+
 .slider-item {
   width: 100%;
   min-height: 100vh;
@@ -59,11 +65,12 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2.5rem;
-  background-color: rgba(0, 0, 0, 0.189);
+  /* background-color: rgba(0, 0, 0, 0.189); */
   padding: 50px 100px;
   text-align: center;
   z-index: 2;
 }
+
 /* .slider-item:nth-child(2) {
   background: url("../../assets/images/slider/slider4.jpg") no-repeat center
     center / cover;
@@ -71,23 +78,19 @@ body {
 } */
 
 .slider-item:nth-child(1) {
-  background: url("../../assets/images/slider/slider1.jpg") no-repeat center
-    center / cover;
+  background: url("../../assets/images/slider/slider1.jpg") no-repeat center center / cover;
   background-position-x: 70%;
 }
 
 .slider-item:nth-child(2) {
-  background: url("../../assets/images/slider/slider2.jpg") no-repeat top center /
-    cover;
+  background: url("../../assets/images/slider/slider2.jpg") no-repeat top center / cover;
   background-position-x: 70%;
 }
 
 .slider-item:nth-child(3) {
-  background: url("../../assets/images/slider/slider3.jpg") no-repeat center
-    center / cover;
+  background: url("../../assets/images/slider/slider3.jpg") no-repeat center center / cover;
 }
 
 .slider-item:nth-child(4) {
-  background: url("../../assets/images/slider/slider4.jpg") no-repeat center
-    center / cover;
+  background: url("../../assets/images/slider/slider4.jpg") no-repeat center center / cover;
 }

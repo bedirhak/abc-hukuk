@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <li class="nav-links"><a class="nav-direct" href="./index.html">Anasayfa</a></li>
         <li class="nav-links"><a class="nav-direct" href="./about.html">Hakkımızda</a></li>
         <li class="nav-links"><a class="nav-direct" href="./services.html">Hizmetlerimiz</a></li>
-        <li class="nav-links"><a class="nav-direct" href="#">Ekibimiz</a></li>
-        <li class="nav-links"><a class="nav-direct" href="#">İletişim</a></li>
+        <!-- <li class="nav-links"><a class="nav-direct" href="./team.html">Ekibimiz</a></li> -->
+        <li class="nav-links"><a class="nav-direct" href="./contact.html">İletişim</a></li>
       </ul>
     </nav>
     <div class="abc-mobile-menu">
@@ -31,15 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
           <h6>İletişim</h6>
           <div class="footer-each">
             <div><i class="fa-solid fa-location-dot"></i></div>
-            <p>Merkezefendi Mah. Mevlana Cad. Tercüman Sitesi A-10 Blok Kat: 18 D: 74 Zeytinburnu / İstanbul</p>
+            <p>Cumhuriyet, Selimiye Cd. No:30 D:2, 34457 Sarıyer/İstanbul</p>
           </div>
           <div class="footer-each">
             <div><i class="fa-solid fa-phone"></i></div>
-            <p>yunusemre@abclegal.com.tr</p>
+             <a class="footer-phone-number" href="tel:+905422913883">+90 542 291 38 83</a>
           </div>
           <div class="footer-each">
             <div><i class="fa-solid fa-envelope"></i></div>
-            <p>+90 542 291 38 83</p>
+            <p>yunusemre@abclegal.com.tr</p>
           </div>
         </div>
       </div>

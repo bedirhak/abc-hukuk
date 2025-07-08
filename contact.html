@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/fav.png">
+    <link rel="stylesheet" href="../styles/normalization.css">
+    <script src="scripts/components.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/breadcrumb.js"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <title>ABC - İletişim</title>
+</head>
+
+<body class="header-mock">
+    <div class="abc-breadcrumb" data-content="İletişim"></div>
+
+
+    <div class="abc-contact">
+
+        <div class="abc-contact-content">
+            <div class="abc-contact-form">
+                <h6 class="abc-contact-form-title">İletişim Formu</h6>
+                <p class="abc-contact-form-desc">Görüşme talebinde bulunmak veya hizmetlerimiz hakkında detaylı bilgi
+                    almak için bizimle iletişime
+                    geçin.</p>
+                <form>
+                    <div class="abc-form-two">
+                        <div class="abc-input-container">
+
+                            <label for="name">Ad Soyad</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="abc-input-container">
+
+                            <label for="mail">E-Posta</label>
+                            <input type="text" id="mail" name="mail" required>
+                        </div>
+                    </div>
+                    <div class="abc-form-two">
+                        <div class="abc-input-container">
+
+                            <label for="phone">Telefon Numarası</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        <div class="abc-input-container">
+
+                            <label for="subject">Konu</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" abc-input-container">
+
+                            <label for="message">Mesaj</label>
+                            <textarea id="message" name="message" class="message" required></textarea>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="abc-submit-button">Gönder</button>
+                </form>
+            </div>
+            <div class="abc-contact-info">
+                <h6 class="abc-contact-form-title">İletişim Bilgileri</h6>
+                <div class="abc-contact-info-card">
+                    <i class="fa-light fa-map-location-dot"></i>
+                    <h6>Adres:</h6>
+                    <p>Cumhuriyet, Selimiye Cd. No:30 D:2, 34457 Sarıyer/İstanbul</p>
+                </div>
+                <div class="abc-contact-info-card">
+                    <i class="fa-thin fa-phone-office"></i>
+                    <h6>Telefon:</h6>
+                    <p>+90 542 291 38 83</p>
+                </div>
+                <div class="abc-contact-info-card">
+                    <i class="fa-light fa-envelopes"></i>
+                    <h6>E-Posta:</h6>
+                    <p>yunusemre@abclegal.com.tr</p>
+                </div>
+                <div class="abc-contact-info-card">
+                    <i class="fa-light fa-calendar-check"></i>
+                    <h6>Çalışma Saatleri:</h6>
+                    <p>Pazartesi - Pazar: 09:00 - 20:00</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="abc-map-container">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.3871092280683!2d29.0298526353209!3d41.14790366291194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5426ada011f%3A0xd3c3545cfe5d4a07!2sCumhuriyet%2C%20Selimiye%20Cd.%20No%3A30%20D%3A2%2C%2034457%20Sar%C4%B1yer%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1751993251815!5m2!1str!2str"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="go-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <span class="line left"></span>
+            <span class="line right"></span>
+        </div>
+</body>
+
+</html>
